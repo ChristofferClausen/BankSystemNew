@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="640.0" prefWidth="634.0" spacing="20.0" style="-fx-background-color: #111111;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.PrimaryController">
+    <AnchorPane prefHeight="650.0" prefWidth="631.0" scaleShape="false" style="-fx-background-color: #9999; -fx-border-color: #f4e803;">
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#152c40" height="141.0" layoutX="1.0" layoutY="220.0" stroke="#ffc400" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeType="INSIDE" width="614.0" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="251.0" layoutY="6.0" prefHeight="30.0" prefWidth="86.0" style="-fx-border-color: #f4e803; -fx-background-color: #000000;" text="CLIENT LOGIN" textFill="WHITE" AnchorPane.bottomAnchor="586.0" AnchorPane.leftAnchor="251.0" AnchorPane.rightAnchor="279.0" AnchorPane.topAnchor="6.0">
+            <font>
+                <Font name="Calibri Bold" size="12.0" />
+            </font>
+        </Label>
+        <Button layoutX="214.0" layoutY="317.0" mnemonicParsing="false" onAction="#selectOneAccount" prefHeight="29.0" prefWidth="230.0" snapToPixel="false" style="-fx-background-color: #13a44d; -fx-border-color: #111111;" text="Connect" textFill="WHITE">
+            <font>
+                <Font name="Arial" size="10.0" />
+            </font></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="586.0" onAction="#goToMainMenu" prefHeight="30.0" prefWidth="607.0" snapToPixel="false" style="-fx-background-color: #0052f8; -fx-border-color: #000000;" text="GO BACK TO HOME" textFill="WHITE">
+            <font>
+                <Font name="Arial" size="10.0" />
+            </font>
+        </Button>
+        <TextField fx:id="selectOneId" alignment="CENTER" layoutX="214.0" layoutY="237.0" prefHeight="30.0" prefWidth="230.0" style="-fx-border-color: #f4e803; -fx-background-color: #ffffff;" />
+        <PasswordField alignment="CENTER" layoutX="214.0" layoutY="276.0" prefHeight="30.0" prefWidth="230.0" promptText="Password" style="-fx-border-color: #f4e803; -fx-background-color: #000000;" />
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="181.0" layoutY="237.0">
+            <Image url="@icons8-female-profile-50.png" />
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="181.0" layoutY="276.0">
+            <Image url="@icons8-keepass-50.png" />
+        </ImageView>
+    </AnchorPane>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</VBox>

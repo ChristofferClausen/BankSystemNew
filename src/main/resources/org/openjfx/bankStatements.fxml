@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="640.0" prefWidth="634.0" spacing="20.0" style="-fx-background-color: #111111;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.PrimaryController">
+    <AnchorPane prefHeight="650.0" prefWidth="631.0" scaleShape="false" style="-fx-background-color: #9999; -fx-border-color: #f4e803;">
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#092b46" height="412.0" layoutX="8.0" layoutY="138.0" stroke="#ffc400" strokeType="INSIDE" width="601.0" />
+        <Label contentDisplay="CENTER" layoutX="271.0" layoutY="4.0" prefHeight="22.0" prefWidth="74.0" style="-fx-border-color: #f4e803; -fx-background-color: #000000;" text="  WITHDRAW" textFill="WHITE" AnchorPane.bottomAnchor="596.0" AnchorPane.leftAnchor="271.0" AnchorPane.rightAnchor="271.0" AnchorPane.topAnchor="4.0">
+            <font>
+                <Font name="Calibri Bold" size="12.0" />
+            </font>
+        </Label>
+        <Button layoutX="271.0" layoutY="515.0" mnemonicParsing="false" onAction="#saveTextFile" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #507c12; -fx-border-color: #111111;" text="Receipt" textFill="WHITE" />
+        <ListView fx:id="listView" layoutX="15.0" layoutY="147.0" prefHeight="360.0" prefWidth="586.0" />
+        <Button layoutX="5.0" layoutY="586.0" onAction="#goToRedanKundMenu" prefHeight="30.0" prefWidth="602.0" style="-fx-background-color: #0052f8; -fx-border-color: #000000;" text="GO BACK" textFill="WHITE">
+        <font>
+            <Font name="Arial" size="10.0" />
+        </font>
+    </Button>
+</AnchorPane>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</VBox>
